@@ -1,0 +1,13 @@
+ffmpeg -i video.mp4 -filter_complex
+        "[0]split[body][pre];
+         [pre]trim=duration=1,format=yuva420p,fade=d=1:alpha=1,setpts=PTS+(28/TB)[jt];
+         [body]trim=1,setpts=PTS-STARTPTS[main];
+         [main][jt]overlay"   
+         output.mp4
+
+
+
+         The video is split into two identical streams. The first is trimmed to just the first second, has an alpha channel added, and then faded. The last filter on the first stream delays it by 28 seconds since the final output will have trimmed off the first second of the original clip and overlap with the last second. The 2nd stream is trimmed to start at t=1 and the processed first stream is overlaid on the 2nd. Since the alpha channel is faded in the first stream, it crossfades in.
+
+
+https://stackoverflow.com/questions/38186672/ffmpeg-make-a-seamless-loop-with-a-crossfade
