@@ -1,0 +1,8 @@
+ffmpeg -i 001.mp4 -vf reverse 001R.mp4.mp4
+
+
+ffmpeg -i 001.mp4.mp4 -i mm1R.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=10:alpha=1,setpts=PTS-STARTPTS+(20/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  001-LOOP.mp4
+
+ffmpeg -i 001-LOOP.mp4 -i 001R.mp4  -filter_complex "fade=in:st=0:d=10:alpha=1,setpts=PTS-STARTPTS+(20/TB)[v1]; [0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=difference" 001-LOOP_difference.mp4
+
+ffprobe -v quiet -show_format -show_streams "P:\YT FRACTAL VIDEOS\Feltoltve YouTube\nice lady with nyakeek\001-LOOP_difference.mp4" >001-properties.txt

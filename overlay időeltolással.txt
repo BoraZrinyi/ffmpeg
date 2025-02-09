@@ -1,0 +1,1 @@
+ffmpeg -i background.mp4 -i overlay_with_alpha.mov -filter_complex "[1:v]setpts=PTS-STARTPTS+17/TB[overlay];[0:v][overlay]overlay=x=0:y=0:format=auto" -c:v libx264 -crf 23 -preset veryfast -pix_fmt yuv420p output.mp4

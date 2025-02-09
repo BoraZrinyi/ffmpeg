@@ -1,0 +1,9 @@
+ffmpeg -i VIDEOPATH  NEWVIDEOPATH.gif"
+
+
+ffmpeg -y -i VIDEOPATH   -filter_complex "fps=10,scale=320:-1:flags=lanczos[x];[x][1:v]paletteuse" giffy.gif
+
+
+
+
+ffmpeg -y -i  -filter_complex "fps=10, scale=320:-1:flags=lanczos[x];[x][1:v]paletteuse" giffy.gif

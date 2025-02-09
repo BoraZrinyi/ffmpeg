@@ -1,0 +1,3 @@
+ffmpeg -i VIDEOPATH -vf "transpose=dir=1" NEWVIDEOPATH-Rotated.mp4"
+
+

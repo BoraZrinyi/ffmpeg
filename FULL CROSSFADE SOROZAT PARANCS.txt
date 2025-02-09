@@ -1,0 +1,362 @@
+
+
+
+
+ffmpeg -i 001.mp4 -i 002.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B2.mp4
+
+ffmpeg -i 003.mp4 -i 004.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B4.mp4
+
+ffmpeg -i 005.mp4 -i 006.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B6.mp4
+
+ffmpeg -i 007.mp4 -i 008.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B8.mp4
+
+ffmpeg -i 009.mp4 -i 010.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B10.mp4
+
+ffmpeg -i 011.mp4 -i 012.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B12.mp4
+
+ffmpeg -i 013.mp4 -i 014.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B14.mp4
+
+ffmpeg -i 015.mp4 -i 016.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B16.mp4
+
+ffmpeg -i 017.mp4 -i 018.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B18.mp4
+
+ffmpeg -i 019.mp4 -i 020.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B20.mp4
+
+ffmpeg -i 021.mp4 -i 022.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B22.mp4
+
+ffmpeg -i 023.mp4 -i 024.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B24.mp4
+
+ffmpeg -i 025.mp4 -i 026.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B26.mp4
+
+ffmpeg -i 027.mp4 -i 028.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B28.mp4
+
+ffmpeg -i 029.mp4 -i 030.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B30.mp4
+
+ffmpeg -i 031.mp4 -i 032.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B32.mp4
+
+ffmpeg -i 033.mp4 -i 034.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B34.mp4
+
+ffmpeg -i 035.mp4 -i 036.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B36.mp4
+
+ffmpeg -i 037.mp4 -i 038.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B38.mp4
+
+ffmpeg -i 039.mp4 -i 040.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B40.mp4
+
+ffmpeg -i 041.mp4 -i 042.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B42.mp4
+
+ffmpeg -i 043.mp4 -i 044.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B44.mp4
+
+ffmpeg -i 045.mp4 -i 046.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B46.mp4
+
+ffmpeg -i 047.mp4 -i 048.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B48.mp4
+
+ffmpeg -i 049.mp4 -i 050.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B50.mp4
+
+ffmpeg -i 051.mp4 -i 052.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B52.mp4
+
+ffmpeg -i 053.mp4 -i 054.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B54.mp4
+
+ffmpeg -i 055.mp4 -i 056.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B56.mp4
+
+ffmpeg -i 057.mp4 -i 058.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B58.mp4
+
+ffmpeg -i 059.mp4 -i 060.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B60.mp4
+
+ffmpeg -i 061.mp4 -i 062.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B62.mp4
+
+ffmpeg -i 063.mp4 -i 064.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B64.mp4
+
+ffmpeg -i 065.mp4 -i 066.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B66.mp4
+
+ffmpeg -i 067.mp4 -i 068.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B68.mp4
+
+ffmpeg -i 069.mp4 -i 070.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B70.mp4
+
+ffmpeg -i 071.mp4 -i 072.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B72.mp4
+
+ffmpeg -i 073.mp4 -i 074.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B74.mp4
+
+ffmpeg -i 075.mp4 -i 076.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B76.mp4
+
+ffmpeg -i 077.mp4 -i 078.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B78.mp4
+
+ffmpeg -i 079.mp4 -i 080.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B80.mp4
+
+ffmpeg -i 081.mp4 -i 082.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B82.mp4
+
+ffmpeg -i 083.mp4 -i 084.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B84.mp4
+
+ffmpeg -i 085.mp4 -i 086.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B86.mp4
+
+ffmpeg -i 087.mp4 -i 088.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B88.mp4
+
+ffmpeg -i 089.mp4 -i 090.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B90.mp4
+
+ffmpeg -i 091.mp4 -i 092.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B92.mp4
+
+ffmpeg -i 093.mp4 -i 094.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B94.mp4
+
+ffmpeg -i 095.mp4 -i 096.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B96.mp4
+
+ffmpeg -i 097.mp4 -i 098.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B98.mp4
+
+ffmpeg -i 099.mp4 -i 100.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B100.mp4
+
+ffmpeg -i 101.mp4 -i 102.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B102.mp4
+
+ffmpeg -i 103.mp4 -i 104.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B104.mp4
+
+ffmpeg -i 105.mp4 -i 106.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B106.mp4
+
+ffmpeg -i 107.mp4 -i 108.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B108.mp4
+
+ffmpeg -i 109.mp4 -i 110.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B110.mp4
+
+ffmpeg -i 111.mp4 -i 112.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B112.mp4
+
+ffmpeg -i 113.mp4 -i 114.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B114.mp4
+
+ffmpeg -i 115.mp4 -i 116.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B116.mp4
+
+ffmpeg -i 117.mp4 -i 118.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B118.mp4
+
+ffmpeg -i 119.mp4 -i 120.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B120.mp4
+
+ffmpeg -i 121.mp4 -i 122.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B122.mp4
+
+ffmpeg -i 123.mp4 -i 124.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B124.mp4
+
+ffmpeg -i 125.mp4 -i 126.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B126.mp4
+
+ffmpeg -i 127.mp4 -i 128.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(7/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  B128.mp4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ffmpeg -i B2.mp4 -i B4.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C4.mp4
+
+ffmpeg -i B6.mp4 -i B8.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C8.mp4
+
+ffmpeg -i B10.mp4 -i B12.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C12.mp4
+
+ffmpeg -i B14.mp4 -i B16.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C16.mp4
+
+ffmpeg -i B18.mp4 -i B20.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C20.mp4
+
+ffmpeg -i B22.mp4 -i B24.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C24.mp4
+
+ffmpeg -i B26.mp4 -i B28.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C28.mp4
+
+ffmpeg -i B30.mp4 -i B32.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C32.mp4
+
+ffmpeg -i B34.mp4 -i B36.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C36.mp4
+
+ffmpeg -i B38.mp4 -i B40.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C40.mp4
+
+ffmpeg -i B42.mp4 -i B44.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C44.mp4
+
+ffmpeg -i B46.mp4 -i B48.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C48.mp4
+
+ffmpeg -i B50.mp4 -i B52.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C52.mp4
+
+ffmpeg -i B54.mp4 -i B56.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C56.mp4
+
+ffmpeg -i B58.mp4 -i B60.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C60.mp4
+
+ffmpeg -i B62.mp4 -i B64.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C64.mp4
+
+ffmpeg -i B66.mp4 -i B68.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C68.mp4
+
+ffmpeg -i B70.mp4 -i B72.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C72.mp4
+
+ffmpeg -i B74.mp4 -i B76.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C76.mp4
+
+ffmpeg -i B78.mp4 -i B80.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C80.mp4
+
+ffmpeg -i B82.mp4 -i B84.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C84.mp4
+
+ffmpeg -i B86.mp4 -i B88.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C88.mp4
+
+ffmpeg -i B90.mp4 -i B92.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C92.mp4
+
+ffmpeg -i B94.mp4 -i B96.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C96.mp4
+
+ffmpeg -i B98.mp4 -i B100.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C100.mp4
+
+ffmpeg -i B102.mp4 -i B104.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C104.mp4
+
+ffmpeg -i B106.mp4 -i B108.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C108.mp4
+
+ffmpeg -i B110.mp4 -i B112.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C112.mp4
+
+ffmpeg -i B114.mp4 -i B116.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C116.mp4
+
+ffmpeg -i B118.mp4 -i B120.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C120.mp4
+
+ffmpeg -i B122.mp4 -i B124.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C124.mp4
+
+ffmpeg -i B126.mp4 -i B128.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(14/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  C128.mp4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ffmpeg -i C4.mp4 -i C8.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D8.mp4
+
+ffmpeg -i C12.mp4 -i C16.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D16.mp4
+
+ffmpeg -i C20.mp4 -i C24.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D24.mp4
+
+ffmpeg -i C28.mp4 -i C32.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D32.mp4
+
+ffmpeg -i C36.mp4 -i C40.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D40.mp4
+
+ffmpeg -i C44.mp4 -i C48.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D48.mp4
+
+ffmpeg -i C52.mp4 -i C56.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D56.mp4
+
+ffmpeg -i C60.mp4 -i C64.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D64.mp4
+
+ffmpeg -i C68.mp4 -i C72.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D72.mp4
+
+ffmpeg -i C76.mp4 -i C80.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D80.mp4
+
+ffmpeg -i C84.mp4 -i C88.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D88.mp4
+
+ffmpeg -i C92.mp4 -i C96.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D96.mp4
+
+ffmpeg -i C100.mp4 -i C104.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D104.mp4
+
+ffmpeg -i C108.mp4 -i C112.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D112.mp4
+
+ffmpeg -i C116.mp4 -i C120.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D120.mp4
+
+ffmpeg -i C124.mp4 -i C128.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(28/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  D128.mp4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ffmpeg -i D8.mp4 -i D16.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(56/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  E16.mp4
+
+ffmpeg -i D24.mp4 -i D32.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(56/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  E32.mp4
+
+ffmpeg -i D40.mp4 -i D48.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(56/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  E48.mp4
+
+ffmpeg -i D56.mp4 -i D64.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(56/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  E64.mp4
+
+ffmpeg -i D72.mp4 -i D80.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(56/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  E80.mp4
+
+ffmpeg -i D88.mp4 -i D96.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(56/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  E96.mp4
+
+ffmpeg -i D104.mp4 -i D112.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(56/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  E112.mp4
+
+ffmpeg -i D120.mp4 -i D128.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(56/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  E128.mp4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ffmpeg -i E16.mp4 -i E32.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(112/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  F32.mp4
+
+ffmpeg -i E48.mp4 -i E64.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(112/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  F64.mp4
+
+ffmpeg -i E80.mp4 -i E96.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(112/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  F96.mp4
+
+ffmpeg -i E112.mp4 -i E128.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(112/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  F128.mp4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ffmpeg -i F32.mp4 -i F64.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(224/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  G64.mp4
+
+ffmpeg -i F96.mp4 -i F128.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(224/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  G128.mp4
+
+
+
+
+
+
+
+
+
+
+
+ffmpeg -i G64.mp4 -i G128.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(448/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  TELJES_1_ORA_CROSSFADE_TRANSITION.mp4
+
+

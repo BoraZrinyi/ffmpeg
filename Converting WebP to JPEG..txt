@@ -1,0 +1,7 @@
+echo converting WebP to JPEG.
+
+for %%i in ("convert\*.webp") do "ffmpeg.exe" -n -i "%%i" -f image2 -c:v mjpeg -q:v 1 "convert\%%~ni.jpg"
+
+echo removing WebP
+
+for /f "delims=" %%a in ('where /r convert *.webp') do del "%%a"

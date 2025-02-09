@@ -1,0 +1,1 @@
+ffmpeg -i FIRSTVIDEOPATH.mp4 -i SECONDVIDEOPATH.mp4  -filter_complex "[0:v]setpts=PTS-STARTPTS[v0]; [1:v]format=yuva420p,fade=in:st=0:d=4:alpha=1,setpts=PTS-STARTPTS+(25/TB)[v1]; [v0][v1]overlay,format=yuv420p[outv]" -c:v libx264 -map "[outv]"  VIDEOPATH-FADETRANSITION.mp4

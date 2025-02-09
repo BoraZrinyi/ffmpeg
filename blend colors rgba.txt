@@ -1,0 +1,1 @@
+fmpeg -i bg.mp4 -i fg.mov -filter_complex "[0:v] format=rgba [bg]; [1:v] format=rgba [fg]; [bg][fg] blend=all_mode='multiply':all_opacity=1, format=rgba"  out.mp4

@@ -1,0 +1,1 @@
+ffmpeg -i VIDEOPATH -i MÁSIKVIDEOPATH -filter_complex "[1:0] setsar=sar=1,format=rgba [1sared]; [0:0]format=rgba [0rgbd]; [0rgbd][1sared]blend=all_mode='addition':repeatlast=1:all_opacity=1,format=yuva422p10le" -c:v libx264 -preset slow -tune film -crf 19 -c:a aac -strict -2 -ac 2 -b:a 256k -pix_fmt yuv420p NEWVIDEOPATH

@@ -1,0 +1,13 @@
+Fade in és fade out effektusok: A fade szűrőt kell alkalmazni a második videóra (001R.mp4) a be- és kihalványulásokhoz. Itt meghatározhatod a fade in és fade out időtartamát és kezdő időpontját.
+
+ffmpeg
+Copy code
+
+
+ffmpeg -i 001-LOOP.mp4 -i 001R.mp4 -filter_complex "[1:v]setpts=PTS-STARTPTS+10/TB, fade=t=in:st=10:d=5, fade=t=out:st=20:d=5[v1]; [1:a]adelay=10000|10000, afade=t=in:st=10:d=5, afade=t=out:st=20:d=5[a1]; [0:v]format=gbrp[f0]; [v1]format=gbrp[f1]; [f0][f1]blend=all_mode=difference; [0:a][a1]amix=inputs=2" -map 0:v -map 1:v -map 2:a 001-LOOP_difference.mp4
+
+
+
+Itt a fade=t=in:st=10:d=5 a videó fade in-jét kezeli, ami 10 másodperccel a késleltetés után kezdődik és 5 másodpercig tart. A fade=t=out:st=20:d=5 a fade out-ra vonatkozik, ami 20 másodperccel a videó kezdete után kezdődik és szintén 5 másodpercig tart. Az afade hasonló, de a hanghoz alkalmazva.
+
+Ezekkel a módosításokkal a második videó késleltetve kezdődik, majd szépen be- és kihalványul, miközben a blend szűrőt is használod az összekeverésre.

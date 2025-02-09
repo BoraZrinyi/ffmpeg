@@ -1,0 +1,32 @@
+VIDEÓK EGYMÁS FELETT, VÁLTOZIK IDŐBEN, ANIMÁCIÓ, OVERLAY
+
+
+
+
+
+ffmpeg -i ebg.mp4 -i 012R.mp4 -filter_complex [0][1]overlay=x=0:y=0 ebg-012.mp4
+
+
+ffmpeg -i ebg.mp4 -i 012R.mp4  -filter_complex [0][1]overlay=enable='between(t,15,45)':x=0:y=0; ebg-012R-v2.mp4
+
+
+
+
+
+
+
+
+ffmpeg -i video.mp4 -i overlay1.png -i overlay2.png -i overlay3.png -filter_complex [0][1]overlay=enable='between(t,0,4)':x=0:y=0[out];[out][2]overlay=enable='between(t,4,8)':x=0:y=0[out];[out][3]overlay=enable='between(t,8,12)':x=0:y=0 output.mp4
+
+
+
+ffmpeg -i video.mp4 -i overlay1.png -i overlay2.png -i overlay3.png -filter_complex [0][1]overlay=enable='between(t,0,4)':x=0:y=0[out];[out][2]overlay=enable='between(t,4,8)':x=0:y=0[out];[out][3]overlay=enable='between(t,8,12)':x=0:y=0 output.mp4
+
+
+
+ffmpeg -i video.mp4 -i overlay1.png -i overlay2.png -i overlay3.png -filter_complex [0][1]overlay=enable='between(t,0,4)':x=0:y=0[out];[out][2]overlay=enable='between(t,4,8)':x=0:y=0[out];[out][3]overlay=enable='between(t,8,12)':x=0:y=0 output.mp4
+
+
+
+ffmpeg -i video.mp4 -i overlay1.png -i overlay2.png -i overlay3.png -filter_complex [0][1]overlay=enable='between(t,0,4)':x=0:y=0[out];[out][2]overlay=enable='between(t,4,8)':x=0:y=0[out];[out][3]overlay=enable='between(t,8,12)':x=0:y=0 output.mp4
+

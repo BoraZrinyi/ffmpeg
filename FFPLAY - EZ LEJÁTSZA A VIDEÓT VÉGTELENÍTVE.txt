@@ -1,0 +1,2 @@
+EZ LEJÁTSZA A VIDEÓT VÉGTELENÍTVE
+ffplay -i VIDEOPATH -loop 0

@@ -1,0 +1,109 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green176\blue80;\red255\green0\blue0;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\f0\fs22\lang9      addition    and\tab  average     bleach     burn     darken     difference     divide     dodge     exclusion     extremity  freeze    geometric      glow  grainextract      grainmerge      hardlight     hardmix    hardoverlay     heat     interpolate    linearlight     lighten     multiply    multiply128     normal (all_opacity = 0.5)   negation     normal     or     overlay     phoenix     pinlight     reflect     screen     softdiffernce     softlight  stain       subtract     vividlight     xor\par
+\cf0\par
+ffmpeg -i VIDEOPATH -i MASIKVIDEOPATH -filter_complex blend=all_mode=addition NEWVIDEOPATH\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=and" \cf2 NEWVIDEOPATH---and\cf0 .mp4\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-addition\cf0 .mp4\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=average" \cf2 NEWVIDEOPATH-average.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=burn" \cf2 NEWVIDEOPATH-burn.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=darken" \cf2 NEWVIDEOPATH-darken.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=difference" \cf2 NEWVIDEOPATH-difference.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=divide" \cf2 NEWVIDEOPATH-divide.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=dodge" \cf2 NEWVIDEOPATH-dodge.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=exclusion" \cf2 NEWVIDEOPATH-exclusion.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=hardlight" \cf2 NEWVIDEOPATH-\cf0 hardlight\cf2 .mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=lighten" \cf2 NEWVIDEOPATH-\cf0 lighten\cf2 .mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=multiply" \cf2 NEWVIDEOPATH-\cf0 multiply\cf2 .mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=negation" \cf2 NEWVIDEOPATH-negation.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=normal" \cf2 NEWVIDEOPATH-normal.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=or" \cf2 NEWVIDEOPATH-or.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=overlay" \cf2 NEWVIDEOPATH-overlay.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=phoenix" \cf2 NEWVIDEOPATH-phoenix.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=pinlight" \cf2 NEWVIDEOPATH-pinlight.mp4\par
+\cf0\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=reflect" \cf2 NEWVIDEOPATH-reflect.mp4\par
+\cf0\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=screen" \cf2 NEWVIDEOPATH-screen.mp4\par
+\cf0\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=softlight" \cf2 NEWVIDEOPATH-softlight.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=subtract" \cf2 NEWVIDEOPATH-subtract.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=vividlight" \cf2 NEWVIDEOPATH-vividlight.mp4\cf0\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=xor" \cf2 NEWVIDEOPATH-xor.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+ffmpeg -i \cf2 VIDEOPATH \cf0 -i \cf2 MASIKVIDEOPATHVAGYKEPPATH \cf0 -filter_complex "[0:v]format=gbrp[f0],[1:v]format=gbrp[f1],[f0][f1]blend=all_mode=addition" \cf2 NEWVIDEOPATH-.mp4\cf0\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
